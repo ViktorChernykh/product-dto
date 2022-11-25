@@ -1,6 +1,6 @@
 //
-//  Dimensions.swift
-//  Addswift
+//  DimensionsDto.swift
+//  ProductDto
 //
 //  Created by Victor Chernykh on 18.04.2022.
 //
@@ -10,7 +10,7 @@ public struct DimensionsDto: Codable {
     public let height: Double?
     public let length: Double?
     public let width: Double?
-    
+
     // MARK: - Init
     public init(
         height: Double? = nil,

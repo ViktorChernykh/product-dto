@@ -1,6 +1,6 @@
 //
 //  DesireDto.swift
-//  Addswift
+//  ProductDto
 //
 //  Created by Victor Chernykh on 01.05.2022.
 //
@@ -16,7 +16,7 @@ public struct DesireDto: Codable {
     public let price: Double?
     public let productId: UUID
     public let subtitle: String
-    
+
     // MARK: - Init
     public init(
         id: UUID,

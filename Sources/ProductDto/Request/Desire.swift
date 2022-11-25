@@ -1,6 +1,6 @@
 //
 //  Desire.swift
-//  Addswift
+//  ProductDto
 //
 //  Created by Victor Chernykh on 01.05.2022.
 //
@@ -12,7 +12,7 @@ public struct DesireListDto: Codable {
     public let lang: String?
     public let page: Int?
     public let per: Int?
-    
+
     // MARK: - Init
     public init(
         lang: String? = nil,
@@ -24,12 +24,12 @@ public struct DesireListDto: Codable {
         self.per = per
     }
 }
-    
+
 public struct DesireToggleDto: Codable {
     // MARK: - Stored properties
     public let productIds: [UUID]
     public let set: Bool
-    
+
     // MARK: - Init
     public init(
         productIds: [UUID],

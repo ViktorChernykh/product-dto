@@ -1,6 +1,6 @@
 //
-//  Taxes.swift
-//  Addswift
+//  TaxesDto.swift
+//  ProductDto
 //
 //  Created by Victor Chernykh on 12.04.2022.
 //
@@ -12,7 +12,7 @@ public struct TaxesDto: Codable {
     public let taxDuty: Double?
     public let taxSale: Double?
     public let taxVat: Double?
-    
+
     // MARK: - Init
     public init(
         taxDuty: Double? = nil,

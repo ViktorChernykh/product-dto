@@ -13,8 +13,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "ProductDto", dependencies: [
-        ]),
-        .testTarget(name: "ProductDtoTests", dependencies: ["ProductDto"]),
+        .target(name: "ProductDto", dependencies: []),
     ]
 )

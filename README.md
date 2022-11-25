@@ -1,3 +1,3 @@
-# products-dto
+# product-dto
 
-A Data Transfer Objects for products service.
+A Data Transfer Objects for product service.

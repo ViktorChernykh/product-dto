@@ -1,6 +1,6 @@
 //
 //  DateDto.swift
-//  Addswift
+//  ProductDto
 //
 //  Created by Victor Chernykh on 19.03.2022.
 //
@@ -10,7 +10,7 @@ import Foundation
 public struct DateDto: Codable {
     // MARK: - Stored properties
     public let date: String
-    
+
     // MARK: - Init
     public init(date: Date, timeZone: Int) {
         let zone = timeZone < 0 ? "-\(timeZone)" : "+\(timeZone)"
