@@ -1,5 +1,5 @@
 //
-//  AttributeProductDto.swift
+//  AttributeForProductDto.swift
 //  ProductDto
 //
 //  Created by Victor Chernykh on 25.11.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct AttributeProductDto: Codable {
+public struct AttributeForProductDto: Codable {
     // MARK: - Stored properties
     public let name: String
     public let unit: String?
