@@ -14,8 +14,8 @@ public struct SeoDto: Codable {
 
     // MARK: - Init
     public init(
-        description: String? = nil,
-        title: String? = nil
+        description: String?,
+        title: String?
     ) {
         self.description = description
         self.title = title

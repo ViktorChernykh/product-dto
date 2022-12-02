@@ -18,10 +18,10 @@ public struct ProductInStockDto: Codable {
     // MARK: - Init
     public init(
         inStock: Bool,
-        optionId: UUID? = nil,
-        optionName: String? = nil,
-        optionValueId: UUID? = nil,
-        optionValue: String? = nil
+        optionId: UUID?,
+        optionName: String?,
+        optionValueId: UUID?,
+        optionValue: String?
     ) {
         self.inStock = inStock
         self.optionId = optionId

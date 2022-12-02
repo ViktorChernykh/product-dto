@@ -11,7 +11,7 @@ public struct IntRangeDto: Codable {
     public let max: Int?
 
     // MARK: - Init
-    public init(min: Int? = nil, max: Int? = nil) {
+    public init(min: Int?, max: Int?) {
         self.min = min
         self.max = max
     }

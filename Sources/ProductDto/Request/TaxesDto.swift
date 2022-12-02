@@ -15,9 +15,9 @@ public struct TaxesDto: Codable {
 
     // MARK: - Init
     public init(
-        taxDuty: Double? = nil,
-        taxSale: Double? = nil,
-        taxVat: Double? = nil
+        taxDuty: Double?,
+        taxSale: Double?,
+        taxVat: Double?
     ) {
         self.taxDuty = taxDuty
         self.taxSale = taxSale

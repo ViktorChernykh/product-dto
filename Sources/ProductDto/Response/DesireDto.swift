@@ -20,10 +20,10 @@ public struct DesireDto: Codable {
     // MARK: - Init
     public init(
         id: UUID,
-        image: String? = nil,
+        image: String?,
         name: String,
-        oldPrice: Double? = nil,
-        price: Double? = nil,
+        oldPrice: Double?,
+        price: Double?,
         productId: UUID,
         subtitle: String
     ) {

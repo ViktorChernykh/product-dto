@@ -13,9 +13,9 @@ public struct DimensionsDto: Codable {
 
     // MARK: - Init
     public init(
-        height: Double? = nil,
-        length: Double? = nil,
-        width: Double? = nil
+        height: Double?,
+        length: Double?,
+        width: Double?
     ) {
         self.height = height
         self.length = length

@@ -12,7 +12,7 @@ public struct AttributeGetDto: Codable {
     public let lang: String?
 
     // MARK: - Init
-    public init(lang: String? = nil) {
+    public init(lang: String?) {
         self.lang = lang
     }
 }

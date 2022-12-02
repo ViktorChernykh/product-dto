@@ -36,12 +36,12 @@ public struct ProductInStockListDto: Codable {
 
     // MARK: - Init
     public init(
-        optionValueIds: [UUID]? = nil,
-        productIds: [UUID]? = nil,
-        stockIds: [UUID]? = nil,
-        page: Int? = nil,
-        per: Int? = nil,
-        numberRange: DoubleRangeDto? = nil
+        optionValueIds: [UUID]?,
+        productIds: [UUID]?,
+        stockIds: [UUID]?,
+        page: Int?,
+        per: Int?,
+        numberRange: DoubleRangeDto?
     ) {
         self.optionValueIds = optionValueIds
         self.productIds = productIds

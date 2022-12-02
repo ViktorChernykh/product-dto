@@ -14,7 +14,7 @@ public struct CategoryForProductDto: Codable {
 
     // MARK: - Init
     public init(
-        image: String? = nil,
+        image: String?,
         name: String
     ) {
         self.image = image

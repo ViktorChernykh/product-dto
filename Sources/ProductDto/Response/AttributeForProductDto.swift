@@ -16,7 +16,7 @@ public struct AttributeForProductDto: Codable {
     // MARK: - Init
     public init(
         name: String,
-        unit: String? = nil,
+        unit: String?,
         value: String
     ) {
         self.name = name

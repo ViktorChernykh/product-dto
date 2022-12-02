@@ -12,7 +12,7 @@ public struct DateRangeDto: Codable {
     public let to: Date?
 
     // MARK: - Init
-    public init(from: Date? = nil, to: Date? = nil) {
+    public init(from: Date?, to: Date?) {
         self.from = from
         self.to = to
     }

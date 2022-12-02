@@ -15,9 +15,9 @@ public struct VendorForProductDto: Codable {
 
     // MARK: - Init
     public init(
-        id: UUID? = nil,
-        image: String? = nil,
-        name: String? = nil
+        id: UUID?,
+        image: String?,
+        name: String?
     ) {
         self.id = id
         self.image = image
