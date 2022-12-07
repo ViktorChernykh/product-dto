@@ -84,15 +84,3 @@ public struct CartDeleteItemDto: Codable {
         self.id = id
     }
 }
-
-public struct CartClearDto: Codable {
-    // MARK: - Stored properties
-    public let userId: UUID
-
-    // MARK: - Init
-    public init(
-        userId: UUID
-    ) {
-        self.userId = userId
-    }
-}
