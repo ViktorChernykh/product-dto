@@ -87,12 +87,12 @@ public struct CartDeleteItemDto: Codable {
 
 public struct CartClearDto: Codable {
     // MARK: - Stored properties
-    public let id: UUID
+    public let userId: UUID
 
     // MARK: - Init
     public init(
-        id: UUID
+        userId: UUID
     ) {
-        self.id = id
+        self.userId = userId
     }
 }
