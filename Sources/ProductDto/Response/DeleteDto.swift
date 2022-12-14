@@ -12,7 +12,7 @@ public struct DeleteDto: Codable {
     public var noDeleted: [UUID]
 
     // MARK: - Init
-    public init(noDeleted: [UUID] = []) {
+    public init(noDeleted: [UUID]) {
         self.noDeleted = noDeleted
     }
 }
