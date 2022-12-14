@@ -8,11 +8,11 @@
 import Foundation
 
 public struct OptionValueGetDto: Codable {
-    // MARK: - Stored properties
-    public let lang: String?
+	// MARK: - Stored properties
+	public let lang: String?
 
-    // MARK: - Init
-    public init(lang: String?) {
-        self.lang = lang
-    }
+	// MARK: - Init
+	public init(lang: String?) {
+		self.lang = lang
+	}
 }

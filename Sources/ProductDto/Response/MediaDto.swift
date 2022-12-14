@@ -8,13 +8,13 @@
 import Foundation
 
 public struct MediaDto: Codable {
-    // MARK: - Stored properties
-    public let items: [String]
-    public let productId: UUID
+	// MARK: - Stored properties
+	public let items: [String]
+	public let productId: UUID
 
-    // MARK: - Init
-    public init(items: [String], productId: UUID) {
-        self.items = items
-        self.productId = productId
-    }
+	// MARK: - Init
+	public init(items: [String], productId: UUID) {
+		self.items = items
+		self.productId = productId
+	}
 }

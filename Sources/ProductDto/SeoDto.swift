@@ -8,16 +8,16 @@
 import Foundation
 
 public struct SeoDto: Codable {
-    // MARK: - Stored properties
-    public let description: String?
-    public let title: String?
+	// MARK: - Stored properties
+	public let description: String?
+	public let title: String?
 
-    // MARK: - Init
-    public init(
-        description: String?,
-        title: String?
-    ) {
-        self.description = description
-        self.title = title
-    }
+	// MARK: - Init
+	public init(
+		description: String?,
+		title: String?
+	) {
+		self.description = description
+		self.title = title
+	}
 }

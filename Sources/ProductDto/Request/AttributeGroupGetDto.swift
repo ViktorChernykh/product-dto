@@ -8,11 +8,11 @@
 import Foundation
 
 public struct AttributeGroupGetDto: Codable {
-    // MARK: - Stored properties
-    public let lang: String?
+	// MARK: - Stored properties
+	public let lang: String?
 
-    // MARK: - Init
-    public init(lang: String?) {
-        self.lang = lang
-    }
+	// MARK: - Init
+	public init(lang: String?) {
+		self.lang = lang
+	}
 }

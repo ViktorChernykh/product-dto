@@ -8,11 +8,11 @@
 import Foundation
 
 public struct DeleteDto: Codable {
-    // MARK: - Stored properties
-    public var noDeleted: [UUID]
+	// MARK: - Stored properties
+	public var noDeleted: [UUID]
 
-    // MARK: - Init
-    public init(noDeleted: [UUID]) {
-        self.noDeleted = noDeleted
-    }
+	// MARK: - Init
+	public init(noDeleted: [UUID]) {
+		self.noDeleted = noDeleted
+	}
 }

@@ -8,11 +8,11 @@
 import Foundation
 
 public struct BoolDto: Codable {
-    // MARK: - Stored properties
-    public let state: Bool
+	// MARK: - Stored properties
+	public let state: Bool
 
-    // MARK: - Init
-    public init(state: Bool) {
-        self.state = state
-    }
+	// MARK: - Init
+	public init(state: Bool) {
+		self.state = state
+	}
 }

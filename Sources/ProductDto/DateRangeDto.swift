@@ -7,13 +7,13 @@
 import Foundation
 
 public struct DateRangeDto: Codable {
-    // MARK: - Stored properties
-    public let from: Date?
-    public let to: Date?
+	// MARK: - Stored properties
+	public let from: Date?
+	public let to: Date?
 
-    // MARK: - Init
-    public init(from: Date?, to: Date?) {
-        self.from = from
-        self.to = to
-    }
+	// MARK: - Init
+	public init(from: Date?, to: Date?) {
+		self.from = from
+		self.to = to
+	}
 }

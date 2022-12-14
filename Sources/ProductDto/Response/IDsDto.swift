@@ -8,11 +8,11 @@
 import Foundation
 
 public struct IDsDto: Codable {
-    // MARK: - Stored properties
-    public var ids: [UUID]
+	// MARK: - Stored properties
+	public var ids: [UUID]
 
-    // MARK: - Init
-    public init(ids: [UUID]) {
-        self.ids = ids
-    }
+	// MARK: - Init
+	public init(ids: [UUID]) {
+		self.ids = ids
+	}
 }

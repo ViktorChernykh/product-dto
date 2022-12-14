@@ -8,11 +8,11 @@
 import Foundation
 
 public struct RestoreDto: Codable {
-    // MARK: - Stored properties
-    public var noRestored: [UUID]
+	// MARK: - Stored properties
+	public var noRestored: [UUID]
 
-    // MARK: - Init
-    public init(noRestored: [UUID]) {
-        self.noRestored = noRestored
-    }
+	// MARK: - Init
+	public init(noRestored: [UUID]) {
+		self.noRestored = noRestored
+	}
 }

@@ -6,14 +6,14 @@
 //
 
 public enum AttributeType: String, Codable {
-    public static let schema = "attribute_type"
+	public static let schema = "attribute_type"
 
-    case checkBox
-    case date
-    case files
-    case radio
-    case select
-    case size
-    case textArea
-    case textField
+	case checkBox
+	case date
+	case files
+	case radio
+	case select
+	case size
+	case textArea
+	case textField
 }

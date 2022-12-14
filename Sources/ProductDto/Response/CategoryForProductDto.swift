@@ -8,16 +8,16 @@
 import Foundation
 
 public struct CategoryForProductDto: Codable {
-    // MARK: - Stored properties
-    public var image: String?
-    public let name: String
+	// MARK: - Stored properties
+	public var image: String?
+	public let name: String
 
-    // MARK: - Init
-    public init(
-        image: String?,
-        name: String
-    ) {
-        self.image = image
-        self.name = name
-    }
+	// MARK: - Init
+	public init(
+		image: String?,
+		name: String
+	) {
+		self.image = image
+		self.name = name
+	}
 }

@@ -8,11 +8,11 @@
 import Foundation
 
 public struct IDDto: Codable {
-    // MARK: - Stored properties
-    public let id: UUID
+	// MARK: - Stored properties
+	public let id: UUID
 
-    // MARK: - Init
-    public init(id: UUID) {
-        self.id = id
-    }
+	// MARK: - Init
+	public init(id: UUID) {
+		self.id = id
+	}
 }

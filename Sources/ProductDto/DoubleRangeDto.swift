@@ -6,13 +6,13 @@
 //
 
 public struct DoubleRangeDto: Codable {
-    // MARK: - Stored properties
-    public let min: Double?
-    public let max: Double?
+	// MARK: - Stored properties
+	public let min: Double?
+	public let max: Double?
 
-    // MARK: - Init
-    public init(min: Double?, max: Double?) {
-        self.min = min
-        self.max = max
-    }
+	// MARK: - Init
+	public init(min: Double?, max: Double?) {
+		self.min = min
+		self.max = max
+	}
 }
