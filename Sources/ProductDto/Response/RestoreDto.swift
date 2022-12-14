@@ -12,7 +12,7 @@ public struct RestoreDto: Codable {
     public var noRestored: [UUID]
 
     // MARK: - Init
-    public init(noRestored: [UUID] = []) {
+    public init(noRestored: [UUID]) {
         self.noRestored = noRestored
     }
 }
