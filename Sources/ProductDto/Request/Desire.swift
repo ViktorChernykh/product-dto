@@ -28,14 +28,14 @@ public struct DesireListDto: Codable {
 public struct DesireToggleDto: Codable {
 	// MARK: - Stored properties
 	public let productIds: [UUID]
-	public let set: Bool
+	public let isSet: Bool
 
 	// MARK: - Init
 	public init(
 		productIds: [UUID],
-		set: Bool
+		isSet: Bool
 	) {
 		self.productIds = productIds
-		self.set = set
+		self.isSet = isSet
 	}
 }
