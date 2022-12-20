@@ -44,7 +44,7 @@ public struct CartListDto: Codable {
 	// MARK: - Stored properties
 	public let items: [CartDto]
 	public let isBtoB: Bool
-	public let pageData: PageData
+	public let metadata: PageData
 	public let discount: Double
 	public let grandTotal: Double
 	public let costOfShipping: Double
@@ -54,7 +54,7 @@ public struct CartListDto: Codable {
 	public init(
 		items: [CartDto],
 		isBtoB: Bool,       // isBtoC = false, isBtoB = true
-		pageData: PageData,
+		metadata: PageData,
 		discount: Double,
 		grandTotal: Double,
 		costOfShipping: Double,
@@ -62,7 +62,7 @@ public struct CartListDto: Codable {
 	) {
 		self.items = items
 		self.isBtoB = isBtoB
-		self.pageData = pageData
+		self.metadata = metadata
 		self.discount = discount
 		self.grandTotal = grandTotal
 		self.costOfShipping = costOfShipping
