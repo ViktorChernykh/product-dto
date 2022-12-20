@@ -47,20 +47,14 @@ public struct CartUpdateDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
 	public let quantity: Double
-	public let page: Int?
-	public let per: Int?
 
 	// MARK: - Init
 	public init(
 		id: UUID,
-		quantity: Double,
-		page: Int?,
-		per: Int?
+		quantity: Double
 	) {
 		self.id = id
 		self.quantity = quantity
-		self.page = page
-		self.per = per
 	}
 }
 
