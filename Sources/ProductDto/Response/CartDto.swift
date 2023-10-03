@@ -18,6 +18,7 @@ public struct CartDto: Codable {
 	public let productId: UUID
 	public let total: Double
 	public let quantity: Double
+	public let vendorName: String
 
 	// MARK: - Init
 	public init(
@@ -29,7 +30,8 @@ public struct CartDto: Codable {
 		price: Double,
 		productId: UUID,
 		total: Double,
-		quantity: Double
+		quantity: Double,
+		vendorName: String
 	) {
 		self.id = id
 		self.image = image
@@ -40,6 +42,7 @@ public struct CartDto: Codable {
 		self.productId = productId
 		self.total = total
 		self.quantity = quantity
+		self.vendorName = vendorName
 	}
 }
 
