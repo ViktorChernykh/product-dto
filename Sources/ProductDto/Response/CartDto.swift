@@ -15,6 +15,7 @@ public struct CartDto: Codable {
 	public let optionName: String?
 	public let optionValue: String?
 	public let price: Double
+	public let productId: UUID
 	public let total: Double
 	public let quantity: Double
 
@@ -26,6 +27,7 @@ public struct CartDto: Codable {
 		optionName: String?,
 		optionValue: String?,
 		price: Double,
+		productId: UUID,
 		total: Double,
 		quantity: Double
 	) {
@@ -35,6 +37,7 @@ public struct CartDto: Codable {
 		self.optionName = optionName
 		self.optionValue = optionValue
 		self.price = price
+		self.productId = productId
 		self.total = total
 		self.quantity = quantity
 	}
