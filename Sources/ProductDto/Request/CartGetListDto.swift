@@ -24,18 +24,18 @@ public struct CartGetListDto: Codable {
 
 public struct CartAddDto: Codable {
 	// MARK: - Stored properties
-	/// Options is a dictionary where `[optionId: optionValueId]`
-	public let options: [UUID: UUID]
+	/// Options like `S, Red`.
+	public let optionValueHeaderId: UUID?
 	public let productId: UUID
 	public let quantity: Double
 
 	// MARK: - Init
 	public init(
-		options: [UUID: UUID],
+		optionValueHeaderId: UUID?,
 		productId: UUID,
 		quantity: Double
 	) {
-		self.options = options
+		self.optionValueHeaderId = optionValueHeaderId
 		self.productId = productId
 		self.quantity = quantity
 	}
