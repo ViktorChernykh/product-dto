@@ -14,7 +14,8 @@ public struct CartDto: Codable {
 	public let name: String
 	public let optionValueHeaderId: UUID?
 	public let optionValueHeaderName: String?	// `S, Red`
-	public let price: Double
+	public let oldPrice: Double?
+	public let price: Double?
 	public let productId: UUID
 	public let total: Double
 	public let quantity: Double
@@ -27,7 +28,8 @@ public struct CartDto: Codable {
 		name: String,
 		optionValueHeaderId: UUID?,
 		optionValueHeaderName: String?,
-		price: Double,
+		oldPrice: Double?,
+		price: Double?,
 		productId: UUID,
 		total: Double,
 		quantity: Double,
@@ -38,6 +40,7 @@ public struct CartDto: Codable {
 		self.name = name
 		self.optionValueHeaderId = optionValueHeaderId
 		self.optionValueHeaderName = optionValueHeaderName
+		self.oldPrice = oldPrice
 		self.price = price
 		self.productId = productId
 		self.total = total
