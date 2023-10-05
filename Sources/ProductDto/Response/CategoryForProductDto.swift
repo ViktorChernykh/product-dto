@@ -5,8 +5,6 @@
 //  Created by Victor Chernykh on 30.11.2022.
 //
 
-import Foundation
-
 public struct CategoryForProductDto: Codable {
 	// MARK: - Stored properties
 	public var image: String?

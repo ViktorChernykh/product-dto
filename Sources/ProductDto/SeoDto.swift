@@ -5,8 +5,6 @@
 //  Created by Victor Chernykh on 13.04.2022.
 //
 
-import Foundation
-
 public struct SeoDto: Codable {
 	// MARK: - Stored properties
 	public let description: String?

@@ -5,8 +5,6 @@
 //  Created by Victor Chernykh on 12.04.2022.
 //
 
-import Foundation
-
 public struct TaxesDto: Codable {
 	// MARK: - Stored properties
 	public let taxDuty: Double?
