@@ -79,6 +79,21 @@ public struct CartListDto: Codable {
 	}
 }
 
+public struct CartCountDto: Codable {
+	// MARK: - Stored properties
+	public let row: Double
+	public let total: Double
+
+	// MARK: - Init
+	public init(
+		row: Double,
+		total: Double
+	) {
+		self.row = row
+		self.total = total
+	}
+}
+
 /// Metadata for a given `CartListDto`.
 public struct PageData: Codable {
 	/// Current page number. Starts at `1`.
