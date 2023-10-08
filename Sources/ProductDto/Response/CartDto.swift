@@ -10,13 +10,13 @@ import Foundation
 public struct CartDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
+	public let characteristicId: UUID?
+	public let characteristicName: String?	// `S, Red`
 	public let image: String?
-	public let name: String
-	public let optionValueHeaderId: UUID?
-	public let optionValueHeaderName: String?	// `S, Red`
 	public let oldPrice: Double?
 	public let price: Double?
 	public let productId: UUID
+	public let productName: String
 	public let total: Double
 	public let quantity: Double
 	public let vendorName: String?
@@ -24,25 +24,25 @@ public struct CartDto: Codable {
 	// MARK: - Init
 	public init(
 		id: UUID,
+		characteristicId: UUID?,
+		characteristicName: String?,
 		image: String?,
-		name: String,
-		optionValueHeaderId: UUID?,
-		optionValueHeaderName: String?,
 		oldPrice: Double?,
 		price: Double?,
 		productId: UUID,
+		productName: String,
 		total: Double,
 		quantity: Double,
 		vendorName: String?
 	) {
 		self.id = id
+		self.characteristicId = characteristicId
+		self.characteristicName = characteristicName
 		self.image = image
-		self.name = name
-		self.optionValueHeaderId = optionValueHeaderId
-		self.optionValueHeaderName = optionValueHeaderName
 		self.oldPrice = oldPrice
 		self.price = price
 		self.productId = productId
+		self.productName = productName
 		self.total = total
 		self.quantity = quantity
 		self.vendorName = vendorName

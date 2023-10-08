@@ -25,17 +25,17 @@ public struct CartGetListDto: Codable {
 public struct CartAddDto: Codable {
 	// MARK: - Stored properties
 	/// Options like `S, Red`.
-	public let optionValueHeaderId: UUID?
+	public let characteristicId: UUID?
 	public let productId: UUID
 	public let quantity: Double
 
 	// MARK: - Init
 	public init(
-		optionValueHeaderId: UUID?,
+		characteristicId: UUID?,
 		productId: UUID,
 		quantity: Double
 	) {
-		self.optionValueHeaderId = optionValueHeaderId
+		self.characteristicId = characteristicId
 		self.productId = productId
 		self.quantity = quantity
 	}
@@ -53,17 +53,5 @@ public struct CartUpdateDto: Codable {
 	) {
 		self.id = id
 		self.quantity = quantity
-	}
-}
-
-public struct CartDeleteItemDto: Codable {
-	// MARK: - Stored properties
-	public let id: UUID
-
-	// MARK: - Init
-	public init(
-		id: UUID
-	) {
-		self.id = id
 	}
 }
