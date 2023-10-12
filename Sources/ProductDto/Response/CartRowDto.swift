@@ -1,5 +1,5 @@
 //
-//  CartDto.swift
+//  CartRowDto.swift
 //  ProductDto
 //
 //  Created by Victor Chernykh on 03.12.2022.
@@ -7,12 +7,11 @@
 
 import Foundation
 
-public struct CartDto: Codable {
+public struct CartRowDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
-	public let characteristicId: UUID?
-	public let characteristicName: String?	// `S, Red`
-	public let image: String?
+	public let optionValues: [String: String]
+	public let image: String?		// product main image
 	public let oldPrice: Double?
 	public let price: Double?
 	public let productId: UUID
@@ -24,8 +23,7 @@ public struct CartDto: Codable {
 	// MARK: - Init
 	public init(
 		id: UUID,
-		characteristicId: UUID?,
-		characteristicName: String?,
+		optionValues: [String: String],
 		image: String?,
 		oldPrice: Double?,
 		price: Double?,
@@ -36,8 +34,7 @@ public struct CartDto: Codable {
 		vendorName: String?
 	) {
 		self.id = id
-		self.characteristicId = characteristicId
-		self.characteristicName = characteristicName
+		self.optionValues = optionValues
 		self.image = image
 		self.oldPrice = oldPrice
 		self.price = price
@@ -51,7 +48,7 @@ public struct CartDto: Codable {
 
 public struct CartListDto: Codable {
 	// MARK: - Stored properties
-	public let items: [CartDto]
+	public let items: [CartRowDto]
 	public let isBtoB: Bool
 	public let metadata: PageData
 	public let discount: Double
@@ -61,7 +58,7 @@ public struct CartListDto: Codable {
 
 	// MARK: - Init
 	public init(
-		items: [CartDto],
+		items: [CartRowDto],
 		isBtoB: Bool,       // isBtoC = false, isBtoB = true
 		metadata: PageData,
 		discount: Double,
